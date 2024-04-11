@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Tracker</title>
+    <link rel="stylesheet" href="page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Time Tracker</h1>
+        <h2>UserName <img src="profile.png" alt="profile image"></h2>
+    </header>
+    <hr>
+    <div class="filter">
+    <select onclick=catchange() class="filterbycategory">
+        <option value="" hidden>Filter By Category</option>
+        <option value="">All</option>
+        <option value="Work" onclick="">Work</option>
+        <option value="Personal Space">Personal Space</option>
+    </select>
+    <select onclick=durchange() class="filterbyduration">
+        <option value="" hidden>Filter By Duration</option>
+        <option value="">None</option>
+        <option value="asc">Less Time</option>
+        <option value="desc">More Time</option>
+    </select>
+    </div>
+    <div class="sections">
+       
+        <div class="tasktable">
+        <table>
+            <tr>
+                <th>Category</th>
+                <th>Sub-Category</th>
+                <th>Task</th>
+                <th>Duration</th>
+            </tr>
+            <tbody class="taskbody">
+
+            </tbody>
+        </table>
+    </div>
+        <div class="schedule">
+            <button onclick="addtask()">Add a Task</button>
+            <button>Schedule a Task</button>
+            <h1>Start a New Task</h1>
+            <select class="category">
+                <option value="" hidden>Select Category</option>
+                <option value="Work" >Work</option>
+                <option value="Personal Space" >Personal Space</option>
+            </select>
+            <div class="inputfield">
+                <input type="text" class="subcategory" placeholder="Sub-Category">
+                <input type="text" class="taskname" placeholder="Task Name">
+            </div>
+            <div class="timer">
+               <button class="start">Start</button>
+               <button class="reset">Reset</button>
+               <h2 class="time">00:00:00</h2>
+            </div>
+        </div>
+       <div class="update">
+        <h1>Update Task</h1>
+        <select class="updatecategory">
+            <option value="" hidden>Select Category</option>
+            <option value="Work" >Work</option>
+            <option value="Personal Space" >Personal Space</option>
+        </select>
+        <div class="inputfield">
+            <input type="text" class="updatesubcategory" placeholder="Sub-Category">
+            <input type="text" class="updatetaskname" placeholder="Task Name">
+            <input type="text" class="updateduration" placeholder="Duration(hr:min:sec)">
+        </div>
+        <button class="updatebtn" onclick={update()}>Update</button>
+        <button class="cancel" onclick={cancelupdate()}>Cancel</button>
+       </div>
+    </div>
+</body>
+<script src="page.js"></script>
+</html>

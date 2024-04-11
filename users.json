@@ -1,0 +1,24 @@
+{
+    "users":[
+        {
+            "name":"Maharaja",
+            "email":"maharaja.bat@gmail.com",
+            "password":"maharaja7"
+        },
+        {
+            "name":"Bruce",
+            "email":"bruce@gmail.com",
+            "password":"bruce3"
+        },
+        {
+            "name":"Virumaandi",
+            "email":"virumaandi@gmail.com",
+            "password":"virumandi6"
+        },
+        {
+            "name":"Vikram",
+            "email":"vikram@gmail.com",
+            "password":"vikram1"
+        }
+    ]
+}

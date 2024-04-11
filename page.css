@@ -1,0 +1,120 @@
+
+*{
+    /* margin: 0;
+    padding: 0; */
+    color: white;
+    background-color: black;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+button{
+    cursor: pointer;
+    background-color: red;
+    border: none;
+    border-radius: 20px;
+    width: 5em;
+    padding: 8px;
+}
+header{
+    display: flex;
+    align-items: center;  
+    justify-content:space-evenly;
+}
+img{
+    position: relative;
+    top: 5px;
+    width: 25px;
+    height: 25px;
+}
+hr{
+   border: 1px solid rgb(70, 68, 68);
+}
+.sections{
+    display: flex;
+    font-size: 14px;
+}
+.tasktable{
+    width: 50em;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+td,th{
+    text-align: left;
+    max-width: 70em;
+    overflow-wrap:break-word;
+    padding: 8px;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgb(99, 96, 96);
+}
+.schedule{
+    margin-left: 30vh;
+    text-align: center;
+}
+.update{
+    margin-left: 30vh;
+    display:none;
+    width: 30%;
+    text-align: center;
+}
+.update button{
+    margin-top: 20px;
+}
+.schedule button{
+    background-color: red;
+    border: none;
+    padding: 10px;
+    width: 10em;
+    border-radius:20px;
+    margin:0 10px 20px
+}
+select{
+    margin-top: 20px;
+    border:  none;
+    padding: 8px;
+    font-size: 15px;
+    color: red;
+}
+option{
+    background-color: red;
+    color:white;
+    border: none;
+}
+.inputfield{
+    display: flex;
+    flex-direction: column;
+}
+.inputfield input{
+    padding: 8px;
+    border: none;
+    text-align: center;
+    border-radius: 8px;
+    text-transform: capitalize;
+    margin-top: 15px;
+    background-color: rgb(64, 61, 61);
+}
+.timer{
+    margin-top: 20px;
+}
+li{
+    color: black;
+    cursor: pointer;
+    list-style: none;
+}
+.filter{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+footer p{
+    color: rgb(24, 226, 24);
+    display: none;
+}
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
